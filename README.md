@@ -4,6 +4,14 @@ Easy to use google's pub sub event system for typescript
 # Introduction
 This package aims to implement a event based system using Google Cloud Platform's pub/sub system.
 
+## Installation
+```bash
+# npm
+npm i --save gcp-pub-sub @google-cloud/pubsub
+
+# yarn
+yarn add gcp-pub-sub @google-cloud/pubsub
+```
 
 ### Initialization
 PubSub needs to be configured before it can be used.
