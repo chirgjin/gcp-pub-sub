@@ -1,6 +1,6 @@
 {
     "name": "gcp-pub-sub",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Typescript support for gcp's pub-sub",
     "main": "build/src/index.js",
     "scripts": {
@@ -8,7 +8,8 @@
         "format": "prettier --write .",
         "lint": "eslint . --ext=.ts --fix",
         "build": "ts-node build",
-        "prepublish": "yarn build"
+        "prepublish": "yarn build & yarn make:changelog",
+        "make:changelog": "conventional-changelog -i CHANGELOG.md -s  "
     },
     "repository": {
         "type": "git",
